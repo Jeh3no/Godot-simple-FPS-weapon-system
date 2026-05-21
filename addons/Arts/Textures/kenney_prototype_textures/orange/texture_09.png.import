@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjsyy8e07a1pd"
-path.s3tc="res://.godot/imported/texture_09.png-15901214ba6c091ec7cba9d4ed05dae3.s3tc.ctex"
+path.s3tc="res://.godot/imported/texture_09.png-b130a60cbd4b4c8266e6e302d90c9abc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/Arts/Textures/kenney_prototype_textures/orange/texture_09.png"
-dest_files=["res://.godot/imported/texture_09.png-15901214ba6c091ec7cba9d4ed05dae3.s3tc.ctex"]
+source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/Arts/Textures/kenney_prototype_textures/orange/texture_09.png"
+dest_files=["res://.godot/imported/texture_09.png-b130a60cbd4b4c8266e6e302d90c9abc.s3tc.ctex"]
 
 [params]
 

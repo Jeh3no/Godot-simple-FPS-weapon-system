@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://6muiecysjefp"
-path="res://.godot/imported/Ammo Canister.glb-9f749fd37282d749022070b7663997a8.scn"
+path="res://.godot/imported/Ammo Canister.glb-d543dadf67cb4515aa466567a7c1a8cf.scn"
 
 [deps]
 
-source_file="res://addons/Weapons/Models/Weapons/Ammo Canister.glb"
-dest_files=["res://.godot/imported/Ammo Canister.glb-9f749fd37282d749022070b7663997a8.scn"]
+source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/Weapons/Models/Weapons/Ammo Canister.glb"
+dest_files=["res://.godot/imported/Ammo Canister.glb-d543dadf67cb4515aa466567a7c1a8cf.scn"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi5i075lftcmi"
-path="res://.godot/imported/Image1.png-546ed5a9c9ddc81d22c4ab96d9fe47e6.ctex"
+uid="uid://lb5a4sb7sa6m"
+path="res://.godot/imported/image4.png-0f030ec534a914ece42e56d91ff9fdd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Arts/Images/Image1.png"
-dest_files=["res://.godot/imported/Image1.png-546ed5a9c9ddc81d22c4ab96d9fe47e6.ctex"]
+source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/Arts/Images/image4.png"
+dest_files=["res://.godot/imported/image4.png-0f030ec534a914ece42e56d91ff9fdd5.ctex"]
 
 [params]
 
