@@ -25,9 +25,9 @@ The code has been written in a way to be easely understandable and modifiable/ed
 
 The video showcasing the asset features : https://youtu.be/B4cASUFbamU 
 
-  ### ! A precision about the showcase video : the doom-like sprites, and all the weapon sounds you heard in the video are not in the asset files, because they are under proprietary license.
+  **! A precision about the showcase video : the doom-like sprites, and all the weapon sounds you heard in the video are not in the asset files, because they are under proprietary license.**
 
-### You can see this asset as some sort of demo, for a possible, much bigger (and better) asset, which will be may more advanced, and will have a ton of new features 
+**You can see this asset as some sort of demo, for a possible, much bigger (and better) asset, which will be may more advanced, and will have a ton of new features**
 
 
 # Compatibility
@@ -84,7 +84,7 @@ By default, the key actions are defined as "play_char_{action_name}_action". Do 
 
 To change the keybinds in the scripts, i have set up one that center all the inputs needed, so you won't have to go in differents files each time you want to modify something. The script is called "input_management_component_script", it is located in the player character scene.
 
-  ### ! Important : the play_char_restart_shooting_range_action has to be obligatory added in your project's Input Map, otherwise it will trigger an assert at the start of the game
+  **! Important : the play_char_restart_shooting_range_action has to be obligatory added in your project's Input Map, otherwise it will trigger an assert at the start of the game**
 
 | Input Action Name | Purpose | Default key |
 |---|---|---|
