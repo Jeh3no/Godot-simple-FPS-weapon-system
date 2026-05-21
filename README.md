@@ -57,6 +57,7 @@ The video showcasing the asset features : https://youtu.be/B4cASUFbamU
 
 **Player character**
 - State machine based character controller (https://github.com/Jeh3no/Godot-Simple-State-Machine-First-Person-Controller)
+- Input action checker
 
 **Camera**
 - Viewport camera to render weapons
@@ -68,6 +69,9 @@ The video showcasing the asset features : https://youtu.be/B4cASUFbamU
 - Muzzle flash
 - Bullet hole/decal
 - Explosion effect
+
+**UI**
+- Properties HUD for both player character and weapon system
 
 
 # Installation / Quickstart
@@ -103,7 +107,7 @@ To change the keybinds in the scripts, i have set up one that center all the inp
 | `play_char_weapon_wheel_down_action` | Change to previous weapon | Down Wheel Mouse |
 | `play_char_restart_shooting_range_action` | Restart shooting range | K |
 
-## Step 3 : How to create and add a new weapon to the weapon manager :
+## Step 3 : Create and add a new weapon to the weapon manager :
 !  There is already 5 differents weapon examples in the asset, each of them representing a different type of weapon (pistol, assault rifle, shotgun, sniper rifle, rocket launcher), you can use them as examples, and/or to speed up the creation process.
 
 - Create a new Node3D node, and add it to the "weapon container" node.
@@ -133,15 +137,15 @@ To change the keybinds in the scripts, i have set up one that center all the inp
 The physics layers are already set up in the project, but if you want more clarity, you can name them in the "3D Physics" section of your project settings.
 
 For this, go to **Project > Project Settings > 3D Physics** and name layer 1 to layer 6. For my tests, i named them up like this : 
-	- layer 1 : world
-	- layer 2 : player_character
-	- layer 3 : enemies
-	- layer 4 : play_char_projectiles
-	- layer 5 : enemies_projectiles
-	- layer 6 : ammo_refillers
-	- layer 7 : hitable_boxes
+- layer 1 : world
+- layer 2 : player_character
+- layer 3 : enemies
+- layer 4 : play_char_projectiles
+- layer 5 : enemies_projectiles
+- layer 6 : ammo_refillers
+- layer 7 : hitable_boxes
 	
-  ! Is it worth noting that no element in the asset have the collision layer 4, i just add it for when you would want to add enemies projectiles.
+  **! No element in the asset have the collision layer 4, i just add it for when you would want to add enemies projectiles.**
 
 # **Requets**
 
