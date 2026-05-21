@@ -145,7 +145,7 @@ For this, go to **Project > Project Settings > 3D Physics** and name layer 1 to 
 - layer 6 : ammo_refillers
 - layer 7 : hitable_boxes
 	
-  **! No element in the asset have the collision layer 4, i just add it for when you would want to add enemies projectiles.**
+  **! No element in the asset have the collision layer 4, i just add it for when you will want to add enemies projectiles.**
 
 # **Requets**
 
