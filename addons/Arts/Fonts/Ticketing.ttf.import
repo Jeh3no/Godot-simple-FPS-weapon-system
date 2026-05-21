@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bwr73i28ligrq"
-path="res://.godot/imported/Ticketing.ttf-493eb803c686933c405e8e090f6b32ef.fontdata"
+path="res://.godot/imported/Ticketing.ttf-8780c476e4eb7c822ed9d28281dd9717.fontdata"
 
 [deps]
 
-source_file="res://godot-simple-fps-weapon-system/addons/Arts/Fonts/Ticketing.ttf"
-dest_files=["res://.godot/imported/Ticketing.ttf-493eb803c686933c405e8e090f6b32ef.fontdata"]
+source_file="res://addons/Arts/Fonts/Ticketing.ttf"
+dest_files=["res://.godot/imported/Ticketing.ttf-8780c476e4eb7c822ed9d28281dd9717.fontdata"]
 
 [params]
 
@@ -21,6 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
 keep_rounding_remainders=true

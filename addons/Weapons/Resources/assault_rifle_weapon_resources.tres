@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="WeaponResource" format=3 uid="uid://dw5varje3johx"]
+
+[ext_resource type="PackedScene" uid="uid://x8oniabn746q" path="res://addons/Weapons/Scenes/muzzle_flash_particle_scene.tscn" id="1_cx3y6"]
+[ext_resource type="Script" uid="uid://bnhfyt5sl8jcd" path="res://addons/Weapons/Scripts/weapon_resources_script.gd" id="2_gqw1q"]
+
+[sub_resource type="Curve" id="Curve_e7efc"]
+_limits = [0.0, 1.0, 0.0, 280.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(178.44069, 0.9551106), 0.0, 0.0, 0, 0, Vector2(222.10172, 0.47928184), 0.0, 0.0, 0, 0, Vector2(280, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[resource]
+script = ExtResource("2_gqw1q")
+weapon_name = "AssaultRifle"
+weapon_id = 2
+type = 1
+anim_blend_time = 0.2
+equip_anim_name = "EquipAnimAssaultRifle"
+unequip_anim_name = "UnequipAnimAssaultRifle"
+shoot_anim_name = "ShootAnimAssaultRifle"
+reload_anim_name = "ReloadAnimAssaultRifle"
+total_ammo_in_mag = 30
+total_ammo_in_mag_ref = 30
+ammo_type = "MediumAmmo"
+equip_time = 0.2
+unequip_time = 0.2
+can_auto_shoot = true
+min_spread = -0.07
+max_spread = 0.07
+max_range = 280.0
+damage_per_proj = 26.0
+damage_dropoff = SubResource("Curve_e7efc")
+headshot_damage_mult = 2.0
+time_between_shots = 0.16
+reload_time_per_part = 2.1
+base_rot_speed = 7.0
+target_rot_speed = 8.0
+recoil_val = Vector3(0.08, 0.037, 0)
+pos_val = Array[Vector3]([Vector3(0.2009259, -0.12446213, -0.26282233), Vector3(-1.5707964, 1.5707964, 0)])
+back_to_origin_pos_speed = 0.1
+axis_to_tilt = "X"
+tilt_rot_speed = 8.0
+tilt_rot_amount = 0.16
+min_sway_val = Vector2(-2, -1.333)
+max_sway_val = Vector2(2, 1.333)
+sway_speed_pos = 7.0
+sway_speed_rot = 8.0
+sway_amount_pos = 0.015
+sway_amount_rot = 1.2
+bob_pos_val = Array[Vector3]([Vector3(0.2009259, -0.12446213, -0.26282233), Vector3(-1.5707964, 1.5707964, 0)])
+bob_freq = 1.2
+bob_amount = 0.09
+bob_speed = 10.0
+muzzle_flash_ref = ExtResource("1_cx3y6")
+show_muzzle_flash = true

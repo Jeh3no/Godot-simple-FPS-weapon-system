@@ -1,4 +1,0 @@
-[gd_scene format=3 uid="uid://0lit11q35782"]
-
-[node name="DamageNumber" type="Label3D"]
-billboard = 1

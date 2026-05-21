@@ -1,8 +1,3 @@
-### A precision about the weapons models and textures : 
-
-While the asset is under MIT Licence, the weapons models and textures who are present solely for demo purpose are under GPLv3 Licence, which means that if you want to make a commercial game/project with this asset, you'll need to get rid of theses elements, please see the credits section to know in which folders they are located.
-
-
 # Godot Simple FPS Weapon System Asset
 
 
@@ -16,7 +11,7 @@ While the asset is under MIT Licence, the weapons models and textures who are pr
  
 This asset provides a simple, fully commented, weapon system for FPS games.
 
-A test map with a shooting range as well as a character controller are provided (the character controller is another asset i made some mounths ago : https://github.com/Jeh3no/Godot-Simple-State-Machine-First-Person-Controller)
+A test map with a shooting range, as well as a character controller are provided (the character controller is another asset i made some mounths ago : https://github.com/Jeh3no/Godot-Simple-State-Machine-First-Person-Controller)
 
 The weapon system is resource based, designed to easely customize weapons.
 
@@ -26,179 +21,141 @@ Each component of the weapon (shoot, reload, animation, ammunition) has his own 
 
 The asset is 100% written in GDScript.
 
-Of course, the code has been written in a way to be easely understandable and modifiable/editable, and he's as well fully commented.
-
-He works perfectly on Godot 4.4, and should also works wells on the others 4.x versions (4.3, 4.2, 4.1, 4.0), but you will have to remove the uid files.
+The code has been written in a way to be easely understandable and modifiable/editable, and he's as well fully commented.
 
 The video showcasing the asset features : https://youtu.be/B4cASUFbamU 
 
-A precision about the showcase video : the doom-like sprites, and all the weapon sounds you heard in the video are not in the asset files, because they are under proprietary license.
+  ### ! A precision about the showcase video : the doom-like sprites, and all the weapon sounds you heard in the video are not in the asset files, because they are under proprietary license.
 
 ### You can see this asset as some sort of demo, for a possible, much bigger (and better) asset, which will be may more advanced, and will have a ton of new features 
 
 
+# Compatibility
+
+- **Godot 4.4, 4.5 and 4.6**: Fully supported.
+- **Godot 4.0 - 4.3**: Should work, but you will need to delete the `.uid` files.
+
+
 # **Features**
 
+**Weapon system**
 - Resource based weapons
-
 - Weapon switching
-
 - Weapon shooting
-
 - Weapon reloading
-
 - Weapon bobbing
-
 - Weapon tilting
-
 - Weapon swaying
-
 - Hitscan and projectile types 
-
 - Physics behaviour for both hitscan and projectile
-
-
 - Shared ammo between weapons
-
 - Ammo refilling
 
+**World**
+- Test map, with shooting range, and hitable boxes (physics behaviour)
+- Shooting range with immobile and moving targets
 
-- Camera procedural recoil
-
-- Camera bobbing
-
-- Camera tilting
-
-
-- Muzzle flash
-
-- Bullet hole/decal
-
-
-- Test map, with shooting range
-
+**Player character**
 - State machine based character controller (https://github.com/Jeh3no/Godot-Simple-State-Machine-First-Person-Controller)
 
+**Camera**
+- Viewport camera to render weapons
+- Camera procedural recoil
+- Camera bobbing
+- Camera tilting
 
-# **Purpose**
-
-
-I simply wanted to make it, and share it with the community.
-
-Plus, it can be considered as some kind of demo for a possible big, really big asset.
-
-
-# **How to use**
-
-
-- It's an asset, which means you can add it to an existing project without any issue.
-
-Simply download it, add it to your project, get the files you want to use.
-
-- But you can also use it as a starter template if you want to.
-
-If that's the case, you can simply drag and drop the folders under the "addon" one in a freshly created project.
+**Visuel effects**
+- Muzzle flash
+- Bullet hole/decal
+- Explosion effect
 
 
-### Once the files are downloaded and placed in the project :
+# Installation / Quickstart
 
-You'll need to create a input action in your project for each action, and then type the exact same name into the corresponding input action variable.
+## Step 1: Add the asset to your project
 
-(for example : name your move forward action "moveForward", and then type "moveForward" into the variable "moveForwardAction").
+Download or clone this repository and copy the `addons/` folder into your Godot project's root directory.
 
-## The input actions : 
+## Step 2(optional): Set up input actions
 
-   In the PlayerCharacterScene scene, the PlayerCharacterScript script, attached to the PlayerCharacter node:
-   
-   - moveForwardAction
-     
-   - moveBackwardAction
-     
-   - moveLeftAction
-     
-   - moveRightAction
-     
-   - runAction
-     
-   - jumpAction
-     
-   - crouchAction
+The controller requires **14 input actions** to be defined in your project's Input Map. If they are not binded, the default keybindings will be used. Go to **Project > Project Settings > Input Map** and create each of the following actions, then bind them to your preferred keys/buttons.
 
-   In the PlayerCharacterScene scene, the CameraScript script, attached to the CameraHolder node:
-      
-   - mouseModeAction
+By default, the key actions are defined as "play_char_{action_name}_action". Do not change this name unless you have configured your own key bindings.
 
-   In the PlayerCharacterScene scene, the WeaponManager script, attached to the camera node:
-      
-   - shootAction
+To change the keybinds in the scripts, i have set up one that center all the inputs needed, so you won't have to go in differents files each time you want to modify something. The script is called "input_management_component_script", it is located in the player character scene.
 
-   - reloadAction
+  ### ! Important : the play_char_restart_shooting_range_action has to be obligatory added in your project's Input Map, otherwise it will trigger an assert at the start of the game
 
-   - weaponWheelUpAction
+| Input Action Name | Purpose | Default key |
+|---|---|---|
+| `play_char_move_forward_action` | Move forward | W, Up |
+| `play_char_move_backward_action` | Move backward | S, Down |
+| `play_char_move_left_action` | Strafe left | A, Left |
+| `play_char_move_right_action` | Strafe right | D, Right |
+| `play_char_run_action` | Run / sprint | Shift |
+| `play_char_crouch_action` | Crouch | C |
+| `play_char_jump_action` | Jump | Space |
+| `play_char_zoom_action` | Camera Zoom | Z |
+| `play_char_mouse_mode_action` | Toggle mouse capture | CTRL |
+| `play_char_shoot_action` | Weapon shoot | Left Mouse Button |
+| `play_char_reload_action` | Weapon reload | R |
+| `play_char_weapon_wheel_up_action` | Change to next weapon | Up Wheel Mouse |
+| `play_char_weapon_wheel_down_action` | Change to previous weapon | Down Wheel Mouse |
+| `play_char_restart_shooting_range_action` | Restart shooting range | K |
 
-   - weaponWheelDownAction
-
-     
-   In the TemplateMapScene scene, ShootingRangeTargetManagerScript script, attached to the ShootingRangeTargetManager node:
-      
-   - restartShootingRangeAction
-
-## How to create and add a new weapon to the weapon manager :
+## Step 3 : How to create and add a new weapon to the weapon manager :
 !  There is already 5 differents weapon examples in the asset, each of them representing a different type of weapon (pistol, assault rifle, shotgun, sniper rifle, rocket launcher), you can use them as examples, and/or to speed up the creation process.
 
 - Create a new Node3D node, and add it to the "weapon container" node.
   
 - Place your weapon model as a child of the Node3D node.
-  
+
 - Add a Marker3D node as a child of the weapon model, it will be the weapon attack point.
-  
-- Add a "WeaponSlotScript" script to the Node3D node, and assign the model (Node3D node) and attack point (Marker3D node) variables, as well as the weapon id variable.
-  
+
 - Create a new resource for your weapon, using the "WeaponResource" class reference.
   
+- Add a "WeaponSlotScript" script to the Node3D node, and assign the weapon resources (WeaponResource), the model (Node3D node) and attack point (Marker3D node) variables
+
 - Fill the resource the way you want (the only mandatory variables are ("WeaponName", "WeaponId", a type (Hitscan or projectile), "Position"))
-  
-  ! The weapon id from the weapon resource and the weapon id from the weapon slot must be the same, otherwise it won't work !
 
-- In the "WeaponManager" node, from the editor, add the weapon resources you want the game to load at the start of the scene, in the "Weapon Resources" variable.
-  
-- Then, add the weapons you want the player character to have at the start of the game, in the "Start weapons" variable.
+- In the "WeaponManager" node, from the editor, add the weapons you want the player character to have at the start of the game, in the "Start weapons" variable.
 
-  ! The order in which you place the weapon resources and start weapons doesn't matter, you just need to be sure that the weapon id is the same !
+  ! The order in which you place the start weapons determine the order the play char can select them in game
+
+  ! You need to be sure that the each weapon has a unique id !
 
   ! You need to have at least one start weapon saved in the "Start weapons" variable, it can be a empty node with only the mandatory resource variables assigned, but you need at least one !
 
 - If you have done everything correctly, your weapon should be usable and work in game !
 
-! About the display of damage number, there are some tremendous errors with it, that i don't understand, and i didn't manage to resolve it, so i've put an option to disable it, so that you don't see theses errors (which don't affect gameplay  in any way, i might add, but i preferred to add an option to not trigger them).
+## Step 4(optional): Name 3D physics layers
 
-## About the window :
-If you plan to test your game in fullscreen mdoe, don't forget to set the stretch mode to "canvas_items" so that the sub viewport window (the one displaying the weapons on screenà, resize herself to match the screen size.
+The physics layers are already set up in the project, but if you want more clarity, you can name them in the "3D Physics" section of your project settings.
 
-  
+For this, go to **Project > Project Settings > 3D Physics** and name layer 1 to layer 6. For my tests, i named them up like this : 
+	- layer 1 : world
+	- layer 2 : player_character
+	- layer 3 : enemies
+	- layer 4 : play_char_projectiles
+	- layer 5 : enemies_projectiles
+	- layer 6 : ammo_refillers
+	- layer 7 : hitable_boxes
+	
+  ! Is it worth noting that no element in the asset have the collision layer 4, i just add it for when you would want to add enemies projectiles.
+
 # **Requets**
 
-
-- For any bug request, please write on down in the "issues" section.
-
-- For any new feature request, please write it down in the "discussions" section.
-
-- For any bug resolution/improvement commit, please write it down in the "pull requests" section.
+- **Bug reports**: Open an issue in the [Issues](../../issues) section.
+- **Feature requests**: Post in the [Discussions](../../discussions) section.
+- **Pull requests**: Submit improvements in the [Pull Requests](../../pulls) section.
 
 
 # **Credits**
 
-Kenney Prototype Textures, made by Kenney, upload on the Godot asset library by Calinou : https://godotengine.org/asset-library/asset/781
+Kenney Prototype Textures by Kenney, uploaded on the Godot asset library by Calinou : https://godotengine.org/asset-library/asset/781
 
-Weapons models and textures by Aligned Games : https://opengameart.org/content/polygonal-modern-weapons-collection-1-asset-package
+Weapons models and textures (except for the RPG weapon) by amaraha : https://amaraha.itch.io/free-low-poly-weapons-pack
 
-### Important precision : 
+Ammo Canister model and texture by Stephen Yoshimura (CC-BY) via Poly Pizza : https://poly.pizza/m/b2_n3tmq02h
 
-While the asset is under MIT Licence, the weapons models and textures who are present solely for demo purpose are under GPLv3 Licence, which means that if you want to make a commercial game/project with this asset, you'll need to get rid of theses elements of all the content coming from the "polygonal-modern-weapons-collection-1-asset-package" asset.
-
-Here's the folders where the content is located : 
-
--Weapons/Models
-
--Weapons/Textures
-
+RPG model and texture by : https://sketchfab.com/3d-models/low-poly-rpg-7-de967b52c9794d2995d4606749fcdff7
