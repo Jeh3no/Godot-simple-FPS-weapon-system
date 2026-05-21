@@ -1,4 +1,4 @@
-# Godot Simple FPS Weapon System Asset
+# Godot Simple FPS Weapon System
 
 
  A simple yet complete FPS weapon system asset made in Godot 4.
