@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bu7tj6ka05jwg"]
+
+[ext_resource type="Texture2D" uid="uid://bymur13rpsnx6" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Textures/kenney_prototype_textures/dark/texture_09.png" id="1_abfp0"]
+
+[resource]
+albedo_texture = ExtResource("1_abfp0")
+uv1_triplanar = true

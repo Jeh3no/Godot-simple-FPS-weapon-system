@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://bs0stms0b56kp"]
+
+[ext_resource type="FontFile" uid="uid://bwr73i28ligrq" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Fonts/Ticketing.ttf" id="1_4m4oe"]
+
+[resource]
+line_spacing = 5.0
+font = ExtResource("1_4m4oe")
+font_size = 12
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)

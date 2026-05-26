@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d27xhk2ygjsbr"]
+
+[ext_resource type="Script" uid="uid://coyv53xc2grb0" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Targets/Scripts/hitable_box_script.gd" id="1_2ye1w"]
+[ext_resource type="Texture2D" uid="uid://cjs362v5u7crw" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Textures/kenney_prototype_textures/red/texture_06.png" id="2_5vabe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7y00"]
+albedo_texture = ExtResource("2_5vabe")
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_rhfyy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_88vs1"]
+size = Vector3(1.01, 1.01, 1.01)
+
+[node name="HitableBox" type="RigidBody3D" unique_id=609519920 groups=["HitableObjects"]]
+collision_layer = 64
+collision_mask = 31
+mass = 0.5
+continuous_cd = true
+script = ExtResource("1_2ye1w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2117687045]
+material_override = SubResource("StandardMaterial3D_l7y00")
+mesh = SubResource("BoxMesh_rhfyy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1150776054]
+shape = SubResource("BoxShape3D_88vs1")

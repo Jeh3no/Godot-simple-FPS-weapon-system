@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://dcqxjil1yitbr"]
-
-[ext_resource type="Script" uid="uid://4rvkkqlsfoa2" path="res://Misc/AudioManager/audio_manager_script.gd" id="1_a845a"]
-
-[node name="AudioManager" type="AudioStreamPlayer3D" unique_id=1625422713]
-script = ExtResource("1_a845a")
-
-[connection signal="finished" from="." to="." method="_on_finished"]
