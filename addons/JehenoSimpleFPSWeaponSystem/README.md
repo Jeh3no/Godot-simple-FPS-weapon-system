@@ -3,7 +3,7 @@
 
  A simple yet complete FPS weapon system asset made in Godot 4.
 
- ![Asset logo](https://raw.githubusercontent.com/Jeh3no/Godot-simple-FPS-weapon-system/refs/heads/main/addons/JehenoSimpleFPSWeaponSystem/Arts/Images/thumbnail.jpg)
+ ![Asset logo](https://raw.githubusercontent.com/Jeh3no/Godot-simple-FPS-weapon-system/refs/heads/main/addons/JehenoSimpleFPSWeaponSystem/Arts/StoreImages/thumbnail.jpg)
 
  
  # **General**
@@ -32,7 +32,7 @@ The video showcasing the asset features : https://youtu.be/B4cASUFbamU
 
 # Compatibility
 
-- **Godot 4.4, 4.5 and 4.6**: Fully supported.
+- **Godot 4.4 - 4.7**: Fully supported.
 - **Godot 4.0 - 4.3**: Should work, but you will need to delete the `.uid` files.
 
 
