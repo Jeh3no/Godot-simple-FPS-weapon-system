@@ -1,6 +1,10 @@
 extends StaticBody3D
 
-@export var ammo_to_refill : Dictionary[String, int] = {}
+enum AMMO_TYPES
+{
+	LIGHTAMMO, MEDIUMAMMO, HEAVYAMMO, SHELLAMMO, EXPLOSIVEAMMO
+}
+@export var ammo_to_refill : Dictionary[AMMO_TYPES, int] = {}
 
 @onready var detect_area: Area3D = %DetectArea
 

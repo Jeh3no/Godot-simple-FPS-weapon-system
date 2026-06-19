@@ -11,21 +11,21 @@
 [ext_resource type="Script" uid="uid://b0fbr48rbvn27" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/Camera/camera_script.gd" id="13_2pclp"]
 [ext_resource type="Script" uid="uid://d2jpda3mq5jpa" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_manager_script.gd" id="14_2pclp"]
 [ext_resource type="Script" uid="uid://k7djd8c1xge2" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/Camera/camera_recoil_holder_script.gd" id="14_f33hn"]
-[ext_resource type="LabelSettings" uid="uid://bs0stms0b56kp" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/UI/Arts/label_settings.tres" id="14_gfbru"]
+[ext_resource type="LabelSettings" uid="uid://bs0stms0b56kp" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/HUD/Arts/label_settings.tres" id="14_gfbru"]
 [ext_resource type="Shader" uid="uid://b34228uop3gdf" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/Shaders/speed_lines_shader.gdshader" id="14_jv0i6"]
 [ext_resource type="Texture2D" uid="uid://byo7x4h6i2dgf" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/ImphenziaPalette01-256-Gradient.png" id="14_kxghy"]
 [ext_resource type="Resource" uid="uid://dw5varje3johx" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Resources/assault_rifle_weapon_resources.tres" id="15_8yq60"]
 [ext_resource type="Resource" uid="uid://j42d6dl8qkaj" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Resources/pistol_weapon_resources.tres" id="16_f33hn"]
 [ext_resource type="Resource" uid="uid://c22ax2vp40myl" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Resources/shotgun_weapon_resources.tres" id="16_s4fyg"]
 [ext_resource type="Resource" uid="uid://5s5d4o4ct8y7" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Resources/sniper_rifle_weapon_resources.tres" id="17_ohfgd"]
-[ext_resource type="StyleBox" uid="uid://c50syhy1a4dmh" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/UI/Arts/player_character_ui_theme.tres" id="18_ovq28"]
+[ext_resource type="StyleBox" uid="uid://c50syhy1a4dmh" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/HUD/Arts/player_character_hud_theme.tres" id="18_ovq28"]
 [ext_resource type="Resource" uid="uid://b3rll06l7hp2y" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Resources/rocket_launcher_weapon_resources.tres" id="18_ql4cm"]
 [ext_resource type="Script" uid="uid://bcka80usfl4am" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_slot_script.gd" id="21_2gusm"]
 [ext_resource type="Script" uid="uid://pufyqjrkl22t" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/shoot_managers_script.gd" id="23_8hm8b"]
 [ext_resource type="Script" uid="uid://cfbsp443am2jd" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/reload_manager_script.gd" id="24_jkcbg"]
 [ext_resource type="Script" uid="uid://b45mr122adhlv" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/Ammunition/ammunition_manager_script.gd" id="25_571jm"]
 [ext_resource type="Script" uid="uid://bc64rms0gin6g" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/animation_manager_script.gd" id="26_w0p5k"]
-[ext_resource type="Script" uid="uid://dx02l6p6behb8" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/UI/Sripts/hud_script.gd" id="27_dmd0o"]
+[ext_resource type="Script" uid="uid://dx02l6p6behb8" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/HUD/Scripts/hud_script.gd" id="27_dmd0o"]
 [ext_resource type="Texture2D" uid="uid://jwucel52ti1u" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/weapon_crosshair.png" id="29_i3wqj"]
 [ext_resource type="Script" uid="uid://cwh0y70pui8io" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/Misc/input_management_component_script.gd" id="29_ql4cm"]
 [ext_resource type="Script" uid="uid://cptlccjp685rs" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/Camera/viewport_camera_script.gd" id="30_kxghy"]
@@ -1852,23 +1852,23 @@ grow_vertical = 2
 texture = ExtResource("29_i3wqj")
 expand_mode = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="HUD" unique_id=1459217081]
+[node name="PlayerCharacterProperties" type="MarginContainer" parent="HUD" unique_id=1459217081]
 offset_right = 295.0
 offset_bottom = 291.0
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 
-[node name="PanelContainer" type="PanelContainer" parent="HUD/MarginContainer" unique_id=646165551]
+[node name="PanelContainer" type="PanelContainer" parent="HUD/PlayerCharacterProperties" unique_id=646165551]
 layout_mode = 2
 theme_override_styles/panel = ExtResource("18_ovq28")
 
-[node name="PlayCharInfos" type="HBoxContainer" parent="HUD/MarginContainer/PanelContainer" unique_id=710766494]
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/PlayerCharacterProperties/PanelContainer" unique_id=710766494]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos" unique_id=1398454449]
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer" unique_id=1398454449]
 layout_mode = 2
 
-[node name="CurrentStateLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1795310264]
+[node name="CurrentStateLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1795310264]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1876,7 +1876,7 @@ text = "Current state : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="DesiredMoveSpeedLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1661666703]
+[node name="DesiredMoveSpeedLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1661666703]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1884,7 +1884,7 @@ text = "Desired move speed : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VelocityLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=316626208]
+[node name="VelocityLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=316626208]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1892,7 +1892,7 @@ text = "Velocity : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VelocityVectorLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=736905961]
+[node name="VelocityVectorLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=736905961]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1900,7 +1900,7 @@ text = "Velocity vector : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="IsOnFloorLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1718199459]
+[node name="IsOnFloorLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1718199459]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1908,7 +1908,7 @@ text = "Is on floor :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CeilingCheckLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1861966725]
+[node name="CeilingCheckLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1861966725]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1916,7 +1916,7 @@ text = "Ceiling raycast colliding :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="JumpBufferLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1495571615]
+[node name="JumpBufferLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1495571615]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1924,7 +1924,7 @@ text = "Jump buffering  on :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CoyoteTimeLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1007414510]
+[node name="CoyoteTimeLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1007414510]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1932,7 +1932,7 @@ text = "Coyote time :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbJumpsInAirAllowedLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=2048027860]
+[node name="NbJumpsInAirAllowedLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=2048027860]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1940,7 +1940,7 @@ text = "Nb jumps in air allowed :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="JumpCooldownLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=687396135]
+[node name="JumpCooldownLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=687396135]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1948,11 +1948,11 @@ text = "Time before can jump again :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="HSeparator" type="HSeparator" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1873132802]
+[node name="HSeparator" type="HSeparator" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1873132802]
 layout_mode = 2
 theme_override_constants/separation = 40
 
-[node name="CameraRotationLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=921904636]
+[node name="CameraRotationLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=921904636]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1960,7 +1960,7 @@ text = "Camera rotation :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CurrentFOVLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=1642759016]
+[node name="CurrentFOVLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1642759016]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1968,7 +1968,7 @@ text = "Current FOV :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CameraBobVerticalOffsetLabel" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer" unique_id=499708607]
+[node name="CameraBobVerticalOffsetLabel" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=499708607]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -1976,10 +1976,10 @@ text = "Camera bob vertical offset :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos" unique_id=33570837]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer" unique_id=33570837]
 layout_mode = 2
 
-[node name="CurrentStateLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=800221452]
+[node name="CurrentStateLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=800221452]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -1988,7 +1988,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="DesiredMoveSpeedLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=837692886]
+[node name="DesiredMoveSpeedLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=837692886]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -1997,7 +1997,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VelocityLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=891018838]
+[node name="VelocityLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=891018838]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2006,7 +2006,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VelocityVectorLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=1162698923]
+[node name="VelocityVectorLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1162698923]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2015,7 +2015,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="IsOnFloorLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=1399835840]
+[node name="IsOnFloorLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1399835840]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2024,7 +2024,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CeilingCheckLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=132862962]
+[node name="CeilingCheckLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=132862962]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2033,7 +2033,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="JumpBufferLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=948242538]
+[node name="JumpBufferLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=948242538]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2042,7 +2042,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CoyoteTimeLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=2025657812]
+[node name="CoyoteTimeLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=2025657812]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2051,7 +2051,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbJumpsInAirAllowedLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=282798438]
+[node name="NbJumpsInAirAllowedLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=282798438]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2060,7 +2060,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="JumpCooldownLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=444223359]
+[node name="JumpCooldownLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=444223359]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2069,11 +2069,11 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="HSeparator2" type="HSeparator" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=1586160722]
+[node name="HSeparator2" type="HSeparator" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1586160722]
 layout_mode = 2
 theme_override_constants/separation = 40
 
-[node name="CameraRotationLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=1297887985]
+[node name="CameraRotationLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1297887985]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2082,7 +2082,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CurrentFOVLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=858685681]
+[node name="CurrentFOVLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=858685681]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2091,7 +2091,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="CameraBobVerticalOffsetLabelText" type="Label" parent="HUD/MarginContainer/PanelContainer/PlayCharInfos/VBoxContainer2" unique_id=1890219066]
+[node name="CameraBobVerticalOffsetLabelText" type="Label" parent="HUD/PlayerCharacterProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1890219066]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2100,7 +2100,7 @@ text = "..................."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="MarginContainer2" type="MarginContainer" parent="HUD" unique_id=111024344]
+[node name="FPSProperties" type="MarginContainer" parent="HUD" unique_id=111024344]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -2111,17 +2111,17 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 metadata/_edit_use_anchors_ = true
 
-[node name="PanelContainer" type="PanelContainer" parent="HUD/MarginContainer2" unique_id=2098624615]
+[node name="PanelContainer" type="PanelContainer" parent="HUD/FPSProperties" unique_id=2098624615]
 layout_mode = 2
 theme_override_styles/panel = ExtResource("18_ovq28")
 
-[node name="PlayCharInfos2" type="HBoxContainer" parent="HUD/MarginContainer2/PanelContainer" unique_id=486180799]
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/FPSProperties/PanelContainer" unique_id=486180799]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HUD/MarginContainer2/PanelContainer/PlayCharInfos2" unique_id=1553622651]
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/FPSProperties/PanelContainer/HBoxContainer" unique_id=1553622651]
 layout_mode = 2
 
-[node name="FramesPerSecondLabel" type="Label" parent="HUD/MarginContainer2/PanelContainer/PlayCharInfos2/VBoxContainer" unique_id=878944492]
+[node name="FramesPerSecondLabel" type="Label" parent="HUD/FPSProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=878944492]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -2129,10 +2129,10 @@ text = "Frames per seconds : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/MarginContainer2/PanelContainer/PlayCharInfos2" unique_id=1124019444]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/FPSProperties/PanelContainer/HBoxContainer" unique_id=1124019444]
 layout_mode = 2
 
-[node name="FramesPerSecondLabelText" type="Label" parent="HUD/MarginContainer2/PanelContainer/PlayCharInfos2/VBoxContainer2" unique_id=1168697804]
+[node name="FramesPerSecondLabelText" type="Label" parent="HUD/FPSProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1168697804]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2141,7 +2141,7 @@ text = "....."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="MarginContainer3" type="MarginContainer" parent="HUD" unique_id=355577462]
+[node name="WeaponProperties" type="MarginContainer" parent="HUD" unique_id=355577462]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -2155,17 +2155,17 @@ theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 metadata/_edit_use_anchors_ = true
 
-[node name="PanelContainer" type="PanelContainer" parent="HUD/MarginContainer3" unique_id=380085824]
+[node name="PanelContainer" type="PanelContainer" parent="HUD/WeaponProperties" unique_id=380085824]
 layout_mode = 2
 theme_override_styles/panel = ExtResource("18_ovq28")
 
-[node name="WeaponInfos" type="HBoxContainer" parent="HUD/MarginContainer3/PanelContainer" unique_id=1144948807]
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/WeaponProperties/PanelContainer" unique_id=1144948807]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos" unique_id=30069381]
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer" unique_id=30069381]
 layout_mode = 2
 
-[node name="WeaponStackLabel" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer" unique_id=590540056]
+[node name="WeaponStackLabel" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=590540056]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -2173,7 +2173,7 @@ text = "Available weapons :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="WeaponNameLabel" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer" unique_id=953187329]
+[node name="WeaponNameLabel" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=953187329]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -2181,7 +2181,7 @@ text = "Weapon name :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbAmmoInMagLabel" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer" unique_id=1956840853]
+[node name="NbAmmoInMagLabel" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1956840853]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -2189,7 +2189,7 @@ text = "Nb ammo in mag : "
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbAmmoTotalLabel" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer" unique_id=1917067089]
+[node name="NbAmmoTotalLabel" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer" unique_id=1917067089]
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -2197,10 +2197,10 @@ text = "Nb total ammo :"
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos" unique_id=1883155586]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer" unique_id=1883155586]
 layout_mode = 2
 
-[node name="WeaponStackLabelText" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer2" unique_id=251650984]
+[node name="WeaponStackLabelText" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=251650984]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2209,7 +2209,7 @@ text = "....."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="WeaponNameLabelText" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer2" unique_id=1942563151]
+[node name="WeaponNameLabelText" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1942563151]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2218,7 +2218,7 @@ text = "....."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbAmmoInMagLabelText" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer2" unique_id=1887834449]
+[node name="NbAmmoInMagLabelText" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=1887834449]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
@@ -2227,7 +2227,7 @@ text = "....."
 label_settings = ExtResource("14_gfbru")
 vertical_alignment = 1
 
-[node name="NbAmmoTotalLabelText" type="Label" parent="HUD/MarginContainer3/PanelContainer/WeaponInfos/VBoxContainer2" unique_id=384236975]
+[node name="NbAmmoTotalLabelText" type="Label" parent="HUD/WeaponProperties/PanelContainer/HBoxContainer/VBoxContainer2" unique_id=384236975]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2

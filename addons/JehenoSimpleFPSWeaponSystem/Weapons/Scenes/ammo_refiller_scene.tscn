@@ -424,12 +424,12 @@ size = Vector3(0.64105225, 0.8357544, 1.2124023)
 collision_layer = 32
 collision_mask = 3
 script = ExtResource("1_bsrep")
-ammo_to_refill = Dictionary[String, int]({
-"ExplosiveAmmo": 1,
-"HeavyAmmo": 5,
-"LightAmmo": 17,
-"MediumAmmo": 30,
-"ShellAmmo": 64
+ammo_to_refill = Dictionary[int, int]({
+0: 17,
+1: 30,
+2: 3,
+3: 64,
+4: 2
 })
 
 [node name="DetectArea" type="Area3D" parent="." unique_id=1816241020]

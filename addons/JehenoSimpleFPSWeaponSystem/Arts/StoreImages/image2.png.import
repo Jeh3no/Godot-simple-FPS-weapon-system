@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chw1d64ddcf3i"
-path="res://.godot/imported/icon.png-eaa0f040a0ffafa6f2b3923984be8632.ctex"
+uid="uid://clwq3tyqpxk57"
+path="res://.godot/imported/image2.png-a4bf6d1e33c5ef3b34474fc3e7a4fa57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Images/icon.png"
-dest_files=["res://.godot/imported/icon.png-eaa0f040a0ffafa6f2b3923984be8632.ctex"]
+source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/StoreImages/image2.png"
+dest_files=["res://.godot/imported/image2.png-a4bf6d1e33c5ef3b34474fc3e7a4fa57.ctex"]
 
 [params]
 

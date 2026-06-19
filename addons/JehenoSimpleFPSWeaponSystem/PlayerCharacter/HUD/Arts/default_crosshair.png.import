@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjovn4vy6bmqv"
-path="res://.godot/imported/icon.svg-5e4dc7237b62b88ca279cfcb6aee96bb.ctex"
+uid="uid://dv747ov6fcrsg"
+path="res://.godot/imported/default_crosshair.png-6fa2abfd836c3f6b702154225fadb275.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Images/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-5e4dc7237b62b88ca279cfcb6aee96bb.ctex"]
+source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/HUD/Arts/default_crosshair.png"
+dest_files=["res://.godot/imported/default_crosshair.png-6fa2abfd836c3f6b702154225fadb275.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

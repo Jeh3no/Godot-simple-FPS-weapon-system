@@ -1,18 +1,23 @@
 extends Node3D
 
-var ammo_dict : Dictionary[String, int] = { #key = ammo type, value = ammo start number
-	"LightAmmo" : 68,
-	"MediumAmmo" : 60,
-	"HeavyAmmo" : 10,
-	"ShellAmmo" : 128,
-	"ExplosiveAmmo" : 3,
+enum AMMO_TYPES
+{
+	LIGHTAMMO, MEDIUMAMMO, HEAVYAMMO, SHELLAMMO, EXPLOSIVEAMMO
 }
 
-var max_nb_per_ammo_dict : Dictionary[String, int] = { #key = ammo type, value = ammo max number
-	"LightAmmo" : 136,
-	"MediumAmmo" : 240,
-	"HeavyAmmo" : 40,
-	"ShellAmmo" : 512,
-	"ExplosiveAmmo" : 8,
+var ammo_dict : Dictionary[AMMO_TYPES, int] = { #key = ammo type, value = ammo start number
+	AMMO_TYPES.LIGHTAMMO : 68,
+	AMMO_TYPES.MEDIUMAMMO : 60,
+	AMMO_TYPES.HEAVYAMMO : 10,
+	AMMO_TYPES.SHELLAMMO : 128,
+	AMMO_TYPES.EXPLOSIVEAMMO : 3,
+}
+
+var max_nb_per_ammo_dict : Dictionary[AMMO_TYPES, int] = { #key = ammo type, value = ammo max number
+	AMMO_TYPES.LIGHTAMMO : 136,
+	AMMO_TYPES.MEDIUMAMMO : 240,
+	AMMO_TYPES.HEAVYAMMO : 40,
+	AMMO_TYPES.SHELLAMMO  : 512,
+	AMMO_TYPES.EXPLOSIVEAMMO : 8,
 }
 	

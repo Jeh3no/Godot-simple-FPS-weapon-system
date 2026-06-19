@@ -38,19 +38,19 @@ func weapon_tilt_calculus(play_char_input : Vector2, delta : float) -> Vector3:
 	var tilt_target : Vector3 = Vector3.ZERO
 	#offset rotation relative to the player character direction orientation (left or right)
 	
-	if current_weapon.resources.axis_to_tilt == "X":
+	if current_weapon.resources.axis_to_tilt == current_weapon.resources.AXIS_TO_TILT_TYPES.X:
 		if play_char_input.x == 0.0:
 			tilt_target.x = 0.0
 		else:
 			tilt_target.x = play_char_input.x * current_weapon.resources.tilt_rot_amount
 			
-	elif current_weapon.resources.axis_to_tilt == "Y":
+	elif current_weapon.resources.axis_to_tilt == current_weapon.resources.AXIS_TO_TILT_TYPES.Y:
 		if play_char_input.x == 0.0:
 			tilt_target.y = 0.0
 		else:
 			tilt_target.y = play_char_input.x * current_weapon.resources.tilt_rot_amount
 			
-	elif current_weapon.resources.axis_to_tilt == "Z":
+	elif current_weapon.resources.axis_to_tilt == current_weapon.resources.AXIS_TO_TILT_TYPES.Z:
 		if play_char_input.x == 0.0:
 			tilt_target.z = 0.0
 		else:

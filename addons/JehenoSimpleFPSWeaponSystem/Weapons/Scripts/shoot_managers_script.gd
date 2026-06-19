@@ -47,8 +47,8 @@ func shoot() -> void:
 					point_of_collision = get_camera_fov()
 					
 					#call the fonction corresponding to the selected type
-					if current_weapon.resources.type == current_weapon.resources.types.HITSCAN: hitscan_shot(point_of_collision)
-					elif current_weapon.resources.type == current_weapon.resources.types.PROJECTILE: projectile_shot(point_of_collision)
+					if current_weapon.resources.type == current_weapon.resources.TYPES.HITSCAN: hitscan_shot(point_of_collision)
+					elif current_weapon.resources.type == current_weapon.resources.TYPES.PROJECTILE: projectile_shot(point_of_collision)
 					
 				if current_weapon.resources.show_muzzle_flash: weapon_manager.display_muzzle_flash()
 				
@@ -79,8 +79,8 @@ func get_camera_fov() -> Vector3:
 	#Start raycast in camera position, and launch it in camera direction 
 	var raycast_start : Vector3 = camera.project_ray_origin(viewport/2.0)
 	var raycast_end : Vector3 = Vector3.ZERO
-	if current_weapon.resources.type == current_weapon.resources.types.HITSCAN: raycast_end = raycast_start + camera.project_ray_normal(viewport/2) * current_weapon.resources.max_range 
-	if current_weapon.resources.type == current_weapon.resources.types.PROJECTILE: raycast_end = raycast_start + camera.project_ray_normal(viewport/2) * 280
+	if current_weapon.resources.type == current_weapon.resources.TYPES.HITSCAN: raycast_end = raycast_start + camera.project_ray_normal(viewport/2) * current_weapon.resources.max_range 
+	if current_weapon.resources.type == current_weapon.resources.TYPES.PROJECTILE: raycast_end = raycast_start + camera.project_ray_normal(viewport/2) * 280
 	
 	#Create intersection space to contain possible collisions 
 	var new_intersection : PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(raycast_start, raycast_end)

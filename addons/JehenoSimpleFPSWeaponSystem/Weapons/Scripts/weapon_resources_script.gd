@@ -8,11 +8,11 @@ class_name WeaponResource
 var weapon_slot : WeaponSlot
 
 @export_group("Type variables")
-enum types
+enum TYPES
 {
-	NULL, HITSCAN, PROJECTILE
+	HITSCAN, PROJECTILE
 }
-@export var type = types.NULL 
+@export var type : TYPES = TYPES.HITSCAN
 
 @export_group("Animation variables")
 @export var anim_blend_time : float
@@ -38,7 +38,11 @@ enum types
 @export_group("Ammunition variables")
 @export var total_ammo_in_mag : int 
 @export var total_ammo_in_mag_ref : int 
-@export_enum("LightAmmo", "MediumAmmo", "HeavyAmmo", "ShellAmmo", "ExplosiveAmmo")  var ammo_type : String = "LightAmmo"
+enum AMMO_TYPES
+{
+	LIGHTAMMO, MEDIUMAMMO, HEAVYAMMO, SHELLAMMO, EXPLOSIVEAMMO
+}
+@export var ammo_type : AMMO_TYPES = AMMO_TYPES.LIGHTAMMO
 @export var all_ammo_in_mag : bool = false
 
 @export_group("Equip variables")
@@ -84,7 +88,11 @@ var is_reloading : bool = false
 @export var back_to_origin_pos_speed : float 
 
 @export_group("Tilt variables")
-@export_enum("X", "Y", "Z") var axis_to_tilt : String = "Y"
+enum AXIS_TO_TILT_TYPES
+{
+	X, Y, Z
+}
+@export var axis_to_tilt : AXIS_TO_TILT_TYPES = AXIS_TO_TILT_TYPES.Y
 @export var tilt_rot_speed : float
 @export var tilt_rot_amount : float
 
