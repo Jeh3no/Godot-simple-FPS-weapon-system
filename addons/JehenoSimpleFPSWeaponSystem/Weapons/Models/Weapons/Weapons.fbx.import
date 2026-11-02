@@ -4,18 +4,20 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d30wl52ga0np2"
-path="res://.godot/imported/Weapons.fbx-0636b48f23048addb0f0f3dc8d46950b.scn"
+path="res://.godot/imported/Weapons.fbx-de08470e82538bec59ee7074c4c69b37.scn"
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/Weapons.fbx"
-dest_files=["res://.godot/imported/Weapons.fbx-0636b48f23048addb0f0f3dc8d46950b.scn"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/Weapons.fbx"
+dest_files=["res://.godot/imported/Weapons.fbx-de08470e82538bec59ee7074c4c69b37.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false

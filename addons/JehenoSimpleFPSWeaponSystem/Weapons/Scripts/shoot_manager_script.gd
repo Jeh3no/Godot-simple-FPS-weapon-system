@@ -1,14 +1,17 @@
 extends Node3D
 
-var current_weapon : WeaponSlot
-var point_of_collision : Vector3 = Vector3.ZERO
-var rng : RandomNumberGenerator
+class_name ShootManager
+
+var current_weapon: WeaponSlot
+var point_of_collision: Vector3 = Vector3.ZERO
+var rng: RandomNumberGenerator
 
 @onready var weapon_manager : Node3D = %WeaponManager
 
 func get_current_weapon(current_weapon_ref : WeaponSlot) -> void:
 	#get current weapon resources
 	current_weapon = current_weapon_ref
+	
 	
 func shoot() -> void:
 	if !current_weapon.resources.is_shooting and (
@@ -19,7 +22,7 @@ func shoot() -> void:
 	(current_weapon.resources.all_ammo_in_mag and weapon_manager.ammo_manager.ammo_dict[current_weapon.resources.ammo_type] > 0 and \
 	#has >= ammo than the number of projectiles required for a shot
 	weapon_manager.ammo_manager.amm_dict[current_weapon.resources.ammo_type] >= current_weapon.resources.nb_proj_shots_at_same_time)
-	) and !current_weapon.resources.is_reloading:
+	) and !current_weapon.resources.is_reloading and !weapon_manager.camera_holder.mouse_free:
 		current_weapon.resources.is_shooting = true
 		
 		#number of successive shots (for example if 3, the weapon will shot 3 times in a row)
@@ -62,6 +65,7 @@ func shoot() -> void:
 				
 		current_weapon.resources.is_shooting = false
 		
+		
 func get_camera_fov() -> Vector3:  
 	var camera : Camera3D = %Camera
 	var window : Window = get_window()
@@ -93,6 +97,7 @@ func get_camera_fov() -> Vector3:
 	#Else, return the end of the raycast (so nothing, because he hasn't collide with anything) 
 	else:
 		return raycast_end 
+		
 		
 func hitscan_shot(point_of_collision_hitscan : Vector3) -> void:
 	rng = RandomNumberGenerator.new()
@@ -131,6 +136,7 @@ func hitscan_shot(point_of_collision_hitscan : Vector3) -> void:
 			
 		else:
 			weapon_manager.display_bullet_hole(collider_point, collider_normal)
+			
 			
 func projectile_shot(point_of_collision_projectile : Vector3) -> void:
 	rng = RandomNumberGenerator.new()

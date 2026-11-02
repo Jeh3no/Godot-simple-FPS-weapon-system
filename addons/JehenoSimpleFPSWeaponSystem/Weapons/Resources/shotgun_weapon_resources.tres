@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="WeaponResource" format=3 uid="uid://c22ax2vp40myl"]
 
-[ext_resource type="PackedScene" uid="uid://x8oniabn746q" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/muzzle_flash_particle_scene.tscn" id="1_rwuxs"]
-[ext_resource type="Script" uid="uid://bnhfyt5sl8jcd" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_resources_script.gd" id="2_bxlgv"]
+[ext_resource type="PackedScene" uid="uid://x8oniabn746q" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/muzzle_flash_particle_scene.tscn" id="1_rwuxs"]
+[ext_resource type="Script" uid="uid://bnhfyt5sl8jcd" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_resources_script.gd" id="2_bxlgv"]
 
 [sub_resource type="Curve" id="Curve_e7efc"]
 _limits = [0.0, 1.0, 0.0, 210.0]

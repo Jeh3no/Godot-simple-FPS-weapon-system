@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="WeaponResource" format=3 uid="uid://b3rll06l7hp2y"]
 
-[ext_resource type="PackedScene" uid="uid://x8oniabn746q" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/muzzle_flash_particle_scene.tscn" id="1_5rm5b"]
-[ext_resource type="PackedScene" uid="uid://u4tj3ey6tjg8" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/rocket_scene.tscn" id="2_5xksu"]
-[ext_resource type="Script" uid="uid://bnhfyt5sl8jcd" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_resources_script.gd" id="2_tu3fa"]
+[ext_resource type="PackedScene" uid="uid://x8oniabn746q" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/muzzle_flash_particle_scene.tscn" id="1_5rm5b"]
+[ext_resource type="PackedScene" uid="uid://u4tj3ey6tjg8" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/rocket_scene.tscn" id="2_5xksu"]
+[ext_resource type="Script" uid="uid://bnhfyt5sl8jcd" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scripts/weapon_resources_script.gd" id="2_tu3fa"]
 
 [sub_resource type="Curve" id="Curve_e7efc"]
 _limits = [0.0, 1.0, 0.0, 340.0]

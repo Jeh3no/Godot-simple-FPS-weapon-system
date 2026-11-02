@@ -1,6 +1,5 @@
 extends Node3D
 
-#class name
 class_name CameraHolder
 
 #camera variables
@@ -77,9 +76,10 @@ func _ready() -> void:
 	
 	camera.fov = fov
 	
+	
 func _unhandled_input(event : InputEvent) -> void:
 	#manage camera rotation (360 on x axis, blocked at specified values on y axis, to not having the character do a complete head turn, which will be kinda weird)
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and !mouse_free:
 		var window_scale_factor : float = get_window().content_scale_factor #to have same camera sensibility, whatever the window size is
 		rotate_y(-event.relative.x * (x_axis_sensibility / 10) / window_scale_factor)
 		camera.rotate_x(-event.relative.y * (y_axis_sensibility / 10) / window_scale_factor)
@@ -87,6 +87,7 @@ func _unhandled_input(event : InputEvent) -> void:
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(max_up_angle_view), deg_to_rad(max_down_angle_view))
 		
 		mouse_input = event.relative #get position of the mouse in a 2D sceen, so save it in a Vector2
+		
 		
 func _process(delta : float) -> void:
 	state = play_char.state_machine.curr_state_name
@@ -98,6 +99,7 @@ func _process(delta : float) -> void:
 	zoom()
 	
 	mouse_mode()
+	
 	
 func tilt(delta : float) -> void:
 	if state != "Fly" and state != "Slide" and state != "Wallrun":
@@ -141,10 +143,12 @@ func tilt(delta : float) -> void:
 		#default camera rotation if no specific lean needs to be applied
 		rotation_degrees.z = lerp(rotation_degrees.z, tilt_props_per_state["Default"][0], tilt_props_per_state["Default"][1] * delta)
 			
+			
 func reset_tween() -> void:
 	if tilt_tween and tilt_tween.is_running():
 		tilt_tween.kill()
 	tilt_tween = create_tween()
+	
 	
 #i batantly copy pasted this code from StayAtHomeDev's "Godot FPS Series #2 - Camera effects" video
 #for more in depth explanation of what this code does, and why, check his video
@@ -182,12 +186,14 @@ func bob(delta : float) -> void:
 		#if not applied, the camera can be upper the play char body for listed above states, resulting in wrong view
 		if camera.v_offset != 0.0: camera.v_offset = move_toward(camera.v_offset, 0.0, cam_v_offset_to_0_speed * delta)
 		
+		
 func zoom() -> void:
 	if Input.is_action_just_pressed(zoom_action):
 		zoom_on = !zoom_on
 		if !zoom_on: zoom_has_occured = false
 		
 		change_fov()
+		
 		
 func change_fov() -> void:
 	#for state related fov change requests
@@ -233,6 +239,7 @@ func change_fov() -> void:
 		zoom_has_occured = true
 		fov_change_tween.tween_property(camera, "fov", camera.fov - zoom_val, zoom_duration)
 		fov_change_tween.finished.connect(Callable(fov_change_tween, "kill"))
+		
 		
 func mouse_mode() -> void:
 	#manage the mouse mode (visible = can use mouse on the screen, captured = mouse not visible and locked in at the center of the screen)

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byo7x4h6i2dgf"
-path.s3tc="res://.godot/imported/ImphenziaPalette01-256-Gradient.png-87b166a6f09b5945687492e53341c76c.s3tc.ctex"
+path.s3tc="res://.godot/imported/ImphenziaPalette01-256-Gradient.png-f7f62ef8123f9d66191fe0f85be8dfba.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/ImphenziaPalette01-256-Gradient.png"
-dest_files=["res://.godot/imported/ImphenziaPalette01-256-Gradient.png-87b166a6f09b5945687492e53341c76c.s3tc.ctex"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/ImphenziaPalette01-256-Gradient.png"
+dest_files=["res://.godot/imported/ImphenziaPalette01-256-Gradient.png-f7f62ef8123f9d66191fe0f85be8dfba.s3tc.ctex"]
 
 [params]
 

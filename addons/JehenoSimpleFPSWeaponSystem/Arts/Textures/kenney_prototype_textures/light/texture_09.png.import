@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhl2ldlk2ynlh"
-path="res://.godot/imported/texture_09.png-e28dc4a0805481d1936fba2636eca768.ctex"
+path="res://.godot/imported/texture_09.png-f8193757d6e35808e74d7c0478a0f5d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Arts/Textures/kenney_prototype_textures/light/texture_09.png"
-dest_files=["res://.godot/imported/texture_09.png-e28dc4a0805481d1936fba2636eca768.ctex"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Arts/Textures/kenney_prototype_textures/light/texture_09.png"
+dest_files=["res://.godot/imported/texture_09.png-f8193757d6e35808e74d7c0478a0f5d3.ctex"]
 
 [params]
 

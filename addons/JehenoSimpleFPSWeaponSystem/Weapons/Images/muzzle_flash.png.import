@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br3rf0u4bxs67"
-path.s3tc="res://.godot/imported/muzzle_flash.png-0c91af9cfb498928bbffce8af4b14b8d.s3tc.ctex"
+path.s3tc="res://.godot/imported/muzzle_flash.png-05c76ea64c20e7a264b1ece41d464936.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/muzzle_flash.png"
-dest_files=["res://.godot/imported/muzzle_flash.png-0c91af9cfb498928bbffce8af4b14b8d.s3tc.ctex"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/muzzle_flash.png"
+dest_files=["res://.godot/imported/muzzle_flash.png-05c76ea64c20e7a264b1ece41d464936.s3tc.ctex"]
 
 [params]
 

@@ -4,18 +4,20 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddo8gcuugdj7v"
-path="res://.godot/imported/scene.gltf-9e7404f6994e7718db1bb06273ba994b.scn"
+path="res://.godot/imported/scene.gltf-c17388ed18b44e3f8d95eb73e344f0d4.scn"
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/low_poly_rpg-7/scene.gltf"
-dest_files=["res://.godot/imported/scene.gltf-9e7404f6994e7718db1bb06273ba994b.scn"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Models/Weapons/low_poly_rpg-7/scene.gltf"
+dest_files=["res://.godot/imported/scene.gltf-c17388ed18b44e3f8d95eb73e344f0d4.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
@@ -40,3 +42,4 @@ materials/extract_path=""
 _subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
+gltf/texture_map_mode=0

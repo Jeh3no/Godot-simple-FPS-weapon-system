@@ -1,16 +1,19 @@
 extends Node3D
 
-var reload_time : float
-var start_reload_timer : bool = false #has to be initilated at start
-var current_part_index : int
-var play_sound_and_anim : bool
-var force_reload_stop : bool = false
+class_name ReloadManager
 
-var current_weapon : WeaponSlot
-@onready var weapon_manager : Node3D = %WeaponManager
+var reload_time: float
+var start_reload_timer: bool = false #has to be initilated at start
+var current_part_index: int
+var play_sound_and_anim: bool
+var force_reload_stop: bool = false
+
+var current_weapon: WeaponSlot
+@onready var weapon_manager: Node3D = %WeaponManager
 
 func get_current_weapon(current_weapon_ref : WeaponSlot) -> void:
 	current_weapon = current_weapon_ref
+	
 	
 func _process(delta : float) -> void:
 	if current_weapon:
@@ -21,8 +24,10 @@ func _process(delta : float) -> void:
 			start_reload_timer = false
 			return
 		
+		
 func reload() -> void:
 	reload_start()
+	
 	
 func reload_start() -> void:
 	if current_weapon.resources.has_to_reload:
@@ -49,6 +54,7 @@ func reload_start() -> void:
 				#the rest is been processed is reload_timeProcess, then reloadFollow
 	else:
 		print("No need to reload")
+		
 		
 func reload_follow(delta : float) -> void:
 	if play_sound_and_anim:
@@ -78,6 +84,7 @@ func reload_follow(delta : float) -> void:
 		else:
 			current_weapon.resources.is_reloading = false
 			
+			
 func one_part_reload_calculus() -> void:
 	#explanation of the use of the min function here
 	#case 1: if there's enough ammo to completely refill the magazine
@@ -89,6 +96,7 @@ func one_part_reload_calculus() -> void:
 		current_weapon.resources.total_ammo_in_mag += nb_ammo_to_refill
 		weapon_manager.ammo_manager.ammo_dict[current_weapon.resources.ammo_type] -= nb_ammo_to_refill
 		
+		
 func multi_part_reload_calculus() -> void:
 	var nb_ammo_to_refill : int = current_weapon.resources.total_ammo_in_mag_ref / current_weapon.resources.nb_parts_needed
 	if weapon_manager.ammo_manager.ammo_dict[current_weapon.resources.ammo_type] >= nb_ammo_to_refill and \
@@ -99,6 +107,7 @@ func multi_part_reload_calculus() -> void:
 	else:
 		print("Not enough ammunition in bag, or magazine complete")
 		force_reload_stop = true
+		
 		
 func auto_reload() -> void:
 	#auto reload the weapon if he can reload, has to reload, has auto reload enabled, has enought ammo in the ammo manager, and the magazine is empty

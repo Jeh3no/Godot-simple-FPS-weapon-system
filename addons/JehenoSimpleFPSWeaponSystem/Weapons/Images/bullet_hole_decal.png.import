@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf1nbn3eqdof8"
-path="res://.godot/imported/bullet_hole_decal.png-a825de2ac29b330ba5713538e16d3610.ctex"
+path="res://.godot/imported/bullet_hole_decal.png-dea938b40f9a43f0358c5161f4e60488.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/bullet_hole_decal.png"
-dest_files=["res://.godot/imported/bullet_hole_decal.png-a825de2ac29b330ba5713538e16d3610.ctex"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/bullet_hole_decal.png"
+dest_files=["res://.godot/imported/bullet_hole_decal.png-dea938b40f9a43f0358c5161f4e60488.ctex"]
 
 [params]
 

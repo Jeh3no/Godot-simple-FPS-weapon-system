@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bwqrfifgj21e"]
 
-[ext_resource type="Material" uid="uid://bu7tj6ka05jwg" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Maps/Materials/structure_material_1.tres" id="2_bi2w1"]
-[ext_resource type="Material" uid="uid://cgn7do4y8jc0o" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Maps/Materials/structure_material_2.tres" id="3_3spjh"]
-[ext_resource type="PackedScene" uid="uid://pjv5ptit5tvg" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/ammo_refiller_scene.tscn" id="4_qmrtm"]
-[ext_resource type="PackedScene" uid="uid://cbkopxy3q6dc3" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Targets/Scenes/shooting_range_scene.tscn" id="5_d5isd"]
-[ext_resource type="PackedScene" uid="uid://d27xhk2ygjsbr" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Targets/Scenes/hitable_box_scene.tscn" id="6_nvyew"]
-[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/player_character_scene.tscn" id="8_x5web"]
+[ext_resource type="Material" uid="uid://bu7tj6ka05jwg" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Maps/Materials/structure_material_1.tres" id="2_bi2w1"]
+[ext_resource type="Material" uid="uid://cgn7do4y8jc0o" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Maps/Materials/structure_material_2.tres" id="3_3spjh"]
+[ext_resource type="PackedScene" uid="uid://pjv5ptit5tvg" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Scenes/ammo_refiller_scene.tscn" id="4_qmrtm"]
+[ext_resource type="PackedScene" uid="uid://cbkopxy3q6dc3" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Targets/Scenes/shooting_range_scene.tscn" id="5_d5isd"]
+[ext_resource type="PackedScene" uid="uid://d27xhk2ygjsbr" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Targets/Scenes/hitable_box_scene.tscn" id="6_nvyew"]
+[ext_resource type="PackedScene" uid="uid://bwggrf7sbmkcv" path="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/PlayerCharacter/player_character_scene.tscn" id="8_x5web"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_atpwd"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)

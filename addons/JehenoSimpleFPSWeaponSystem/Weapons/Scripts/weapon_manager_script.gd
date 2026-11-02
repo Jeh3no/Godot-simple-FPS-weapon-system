@@ -2,41 +2,43 @@ extends Node3D
 
 class_name WeaponManager
 
-var weapon_stack : Array[int] #weapons current wielded by play char
-var weapon_list : Dictionary[int, WeaponSlot] #all weapons available in the game (key = weapon id, value = weapon slot)
-@export var start_weapons : Array[WeaponSlot] #the weapons the player character will start with
+var weapon_stack: Array[int] #weapons current wielded by play char
+var weapon_list: Dictionary[int, WeaponSlot] #all weapons available in the game (key = weapon id, value = weapon slot)
+@export var start_weapons: Array[WeaponSlot] #the weapons the player character will start with
 
 var current_weapon : WeaponSlot = null #current weapon (weapon slot)
 var weapon_index : int = 0
 
 #weapon changes variables
-var can_change_weapons : bool = true
-var can_use_weapon : bool = true
+var can_change_weapons: bool = true
+var can_use_weapon: bool = true
 
 @export_group("Keybind variables")
-var shoot_action : StringName
-var reload_action : StringName
-var weapon_wheel_up_action : StringName
-var weapon_wheel_down_action : StringName
+var shoot_action: StringName
+var reload_action: StringName
+var weapon_wheel_up_action: StringName
+var weapon_wheel_down_action: StringName
 
+@onready var camera_holder: CameraHolder = %CameraHolder
 @onready var camera_recoil_holder: CameraRecoilHolder = %CameraRecoilHolder
 @onready var viewport_cam: ViewportCamera = %ViewportCam
-@onready var weapon_container : Node3D = %WeaponContainer
-@onready var shoot_manager : Node3D = %ShootManager
-@onready var reload_manager : Node3D = %ReloadManager
-@onready var ammo_manager : Node3D = %AmmunitionManager
-@onready var anim_player : AnimationPlayer = %AnimationPlayer
-@onready var anim_manager : Node3D = %AnimationManager
-@onready var audio_manager : PackedScene = preload("../../Misc/AudioManager/audio_manager_scene.tscn")
-@onready var bullet_decal : PackedScene = preload("../../Weapons/Scenes/bullet_decal_scene.tscn")
-@onready var hud : HUD = %HUD
-@onready var link_component : Node = %LinkComponent
+@onready var weapon_container: Node3D = %WeaponContainer
+@onready var shoot_manager: Node3D = %ShootManager
+@onready var reload_manager: Node3D = %ReloadManager
+@onready var ammo_manager: Node3D = %AmmunitionManager
+@onready var anim_player: AnimationPlayer = %AnimationPlayer
+@onready var anim_manager: Node3D = %AnimationManager
+@onready var audio_manager: PackedScene = preload("../../Misc/AudioManager/audio_manager_scene.tscn")
+@onready var bullet_decal: PackedScene = preload("../../Weapons/Scenes/bullet_decal_scene.tscn")
+@onready var hud: HUD = %HUD
+@onready var link_component: Node = %LinkComponent
 @onready var input_management_component: InputManagementComponent = %InputManagementComponent
 
 signal weapon_stack_updated
 
 func _ready() -> void:
 	await initialize()
+	
 	
 func initialize() -> void:
 	#stok all weapons
@@ -56,6 +58,7 @@ func initialize() -> void:
 	else:
 		push_error("Play har has no weapons in his inventory")
 		
+		
 func exit_weapon(next_weapon : int) -> void:
 	#this function manage the first part of the weapon switching mechanic
 	#in this part, the current weapon is disabled (unequiped and taked down)
@@ -71,6 +74,7 @@ func exit_weapon(next_weapon : int) -> void:
 	current_weapon.model.hide()
 		
 	await enter_weapon(next_weapon)
+	
 	
 func enter_weapon(next_weapon : int) -> void:
 	#this function manage the second part of the weapon switching mechanic
@@ -98,6 +102,7 @@ func enter_weapon(next_weapon : int) -> void:
 	
 	weapon_stack_updated.emit() #let in here for now, since there isn't any mechanic that can influence the weapon stack (for example a pick and drop weapon mechanic)
 	
+	
 func _process(_delta : float) -> void:
 	if current_weapon and current_weapon.resources and can_use_weapon:
 		await weapon_inputs()
@@ -105,6 +110,7 @@ func _process(_delta : float) -> void:
 		reload_manager.auto_reload()
 		
 	rotate_relative_to_viewport_camera()
+		
 		
 func weapon_inputs() -> void:
 	if Input.is_action_pressed(shoot_action): shoot_manager.shoot()
@@ -120,6 +126,7 @@ func weapon_inputs() -> void:
 		if can_change_weapons and !current_weapon.resources.is_shooting and !current_weapon.resources.is_reloading:
 			weapon_index = max(weapon_index - 1, 0) #from last element of weapon stack to first element 
 			await change_weapon(weapon_stack[weapon_index])
+		
 			
 func change_weapon(next_weapon : int) -> void:
 	if can_change_weapons and !current_weapon.resources.is_shooting and !current_weapon.resources.is_reloading:
@@ -128,8 +135,10 @@ func change_weapon(next_weapon : int) -> void:
 		push_error("Can't change weapon now")
 		return 
 		
+		
 func rotate_relative_to_viewport_camera() -> void:
 	global_rotation = viewport_cam.global_rotation
+	
 	
 func display_muzzle_flash() -> void:
 	#create a muzzle flash instance, and display it at the indicated point
@@ -142,6 +151,7 @@ func display_muzzle_flash() -> void:
 		push_error("%s doesn't have a muzzle flash reference" % current_weapon.resources.weapon_name)
 		return
 		
+		
 func display_bullet_hole(collider_point : Vector3, collider_normal : Vector3) -> void:
 	#create a muzzle flash instance, and display it at the indicated point
 	var bullet_decal_instance : Node3D = bullet_decal.instantiate()
@@ -149,6 +159,7 @@ func display_bullet_hole(collider_point : Vector3, collider_normal : Vector3) ->
 	bullet_decal_instance.global_position = collider_point
 	bullet_decal_instance.look_at(collider_point - collider_normal, Vector3.UP)
 	bullet_decal_instance.rotate_object_local(Vector3(1.0, 0.0, 0.0), 90)
+	
 	
 func weapon_sound_management(sound_name : AudioStream, sound_speed : float) -> void:
 	var audio_ins : AudioStreamPlayer3D = audio_manager.instantiate()
@@ -163,6 +174,7 @@ func weapon_sound_management(sound_name : AudioStream, sound_speed : float) -> v
 		audio_ins.play()
 	else:
 		print("The sound can't be played, AudioStreamPlayer3D instance is not in the scene tree")
+	
 	
 func force_attack_point_transform_values(attack_point : Marker3D) -> void:
 	#reset the attack points rotation values, to ensure that the projectiles will be shot in the correct direction

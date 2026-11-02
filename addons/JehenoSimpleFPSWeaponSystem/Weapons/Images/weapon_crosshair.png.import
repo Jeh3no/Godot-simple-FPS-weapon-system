@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jwucel52ti1u"
-path="res://.godot/imported/weapon_crosshair.png-d2cea3578453e97ba3c755979e5a736d.ctex"
+path="res://.godot/imported/weapon_crosshair.png-b8154b33a4801bf7bed3694dd0d46559.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Simple-FPS-Weapon-System-Asset/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/weapon_crosshair.png"
-dest_files=["res://.godot/imported/weapon_crosshair.png-d2cea3578453e97ba3c755979e5a736d.ctex"]
+source_file="res://Godot-simple-FPS-weapon-system/addons/JehenoSimpleFPSWeaponSystem/Weapons/Images/weapon_crosshair.png"
+dest_files=["res://.godot/imported/weapon_crosshair.png-b8154b33a4801bf7bed3694dd0d46559.ctex"]
 
 [params]
 
